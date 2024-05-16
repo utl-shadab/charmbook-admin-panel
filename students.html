@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Charmbook</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+</head>
+<style>
+    .dataTables_length label{
+       
+    display: inline-flex;
+    margin-bottom: .5rem;
+    gap: 14px;
+    }
+</style>
+<body>
+    <div class="main-wrapper">
+        <!-- header  -->
+        <my-header></my-header>
+        <!-- header end -->
+        <!-- sidebar  -->
+        <my-sidebar></my-sidebar>
+        <!-- sidebar end  -->
+
+        <!-- content start  -->
+        <div class="page-wrapper">
+            <div class="content container-fluid">
+
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-sub-header">
+                                <h3 class="page-title">Welcome Admin!</h3>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active">Admin</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Students list  -->
+                <div class="content container-fluid">
+
+                    <div class="page-header">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="page-sub-header">
+                                    <h3 class="page-title">Students</h3>
+                                    <ul class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="students.html">Student</a></li>
+                                        <li class="breadcrumb-item active">All Students</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="student-group-form">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search by ID ...">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search by Name ...">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search by Phone ...">
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="search-student-btn">
+                                    <button type="btn" class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card card-table comman-shadow">
+                                <div class="card-body">
+
+                                    <div class="page-header">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <h3 class="page-title">Students</h3>
+                                            </div>
+                                            <div class="col-auto text-end float-end ms-auto download-grp">
+                                           
+                                                <a href="add-student.html" class="btn btn-primary mx-2">Create Student <i
+                                                        class="fas fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <div id="DataTables_Table_0_wrapper"
+                                            class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                            
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <table
+                                                        class="table border-0 star-student table-hover table-center mb-0 datatable table-striped dataTable no-footer"
+                                                        id="DataTables_Table_0" role="grid"
+                                                        aria-describedby="DataTables_Table_0_info">
+                                                        <thead class="student-thread">
+                                                            <tr role="row">
+                                                                <th class="sorting_asc" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 24.7344px;">
+                                                                    <div class="form-check check-tables">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="something">
+                                                                    </div>
+                                                                </th>
+                                                                <th class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1"
+                                                                    aria-label="ID: activate to sort column ascending"
+                                                                    style="width: 45.4062px;"> Class ID</th>
+                                                                <th class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1"
+                                                                    aria-label="Name: activate to sort column ascending"
+                                                                    style="width: 161.156px;">First Name</th>
+                                                                <th class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1"
+                                                                    aria-label="Last Name: activate to sort column ascending"
+                                                                    style="width: 161.156px;">Last Name</th>
+                                                                <th class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1"
+                                                                    aria-label=" Enrollment No.: activate to sort column ascending"
+                                                                    style="width: 39.5938px;"> Enrollment No.</th>
+                                                              
+                                                                <th class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1"
+                                                                    aria-label="Mobile Number: activate to sort column ascending"
+                                                                    style="width: 108.141px;">Mobile Number</th>
+                                                             
+                                                                <th class="text-end sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1"
+                                                                    aria-label="Action: activate to sort column ascending"
+                                                                    style="width: 75.2344px;">Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            <tr role="row" class="odd">
+                                                                <td class="sorting_1">
+                                                                    <div class="form-check check-tables">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="something">
+                                                                    </div>
+                                                                </td>
+                                                                <td>PRE2209</td>
+                                                                <td>
+                                                                    <h2 class="table-avatar">
+                                                                        <a href="student-details.html"
+                                                                            class="avatar avatar-sm me-2"><img
+                                                                                class="avatar-img rounded-circle"
+                                                                                src="assets/img/profiles/avatar-01.jpg"
+                                                                                alt="User Image"></a>
+                                                                        <a href="student-details.html">Aakash</a>
+                                                                    </h2>
+                                                                </td>
+                                                                <td>Kumar</td>
+                                                                <td>01732</td>
+                                                                <td>   <a href="tel:7548542125">7548542125</a></td>
+                                                                
+                                                                <td class="text-end">
+                                                                    <div class="actions ">
+                                                                        <a href="javascript:;"
+                                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                                            <i class="feather-trash"></i>
+                                                                        </a>
+                                                                        <a href="edit-student.html"
+                                                                            class="btn btn-sm bg-danger-light">
+                                                                            <i class="feather-edit"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr role="row" class="even">
+                                                                <td class="sorting_1">
+                                                                    <div class="form-check check-tables">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="something">
+                                                                    </div>
+                                                                </td>
+                                                                <td>PRE2209</td>
+                                                                <td>
+                                                                    <h2 class="table-avatar">
+                                                                        <a href="student-details.html"
+                                                                            class="avatar avatar-sm me-2"><img
+                                                                                class="avatar-img rounded-circle"
+                                                                                src="assets/img/profiles/avatar-01.jpg"
+                                                                                alt="User Image"></a>
+                                                                        <a href="student-details.html">Aakash</a>
+                                                                    </h2>
+                                                                </td>
+                                                                <td>Kumar</td>
+                                                                <td>01732</td>
+                                                                <td>   <a href="tel:7548542125">7548542125</a></td>
+                                                                
+                                                                <td class="text-end">
+                                                                    <div class="actions ">
+                                                                        <a href="javascript:;"
+                                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                                            <i class="feather-trash"></i>
+                                                                        </a>
+                                                                        <a href="edit-student.html"
+                                                                            class="btn btn-sm bg-danger-light">
+                                                                            <i class="feather-edit"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr role="row" class="odd">
+                                                                <td class="sorting_1">
+                                                                    <div class="form-check check-tables">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="something">
+                                                                    </div>
+                                                                </td>
+                                                                <td>PRE2209</td>
+                                                                <td>
+                                                                    <h2 class="table-avatar">
+                                                                        <a href="student-details.html"
+                                                                            class="avatar avatar-sm me-2"><img
+                                                                                class="avatar-img rounded-circle"
+                                                                                src="assets/img/profiles/avatar-01.jpg"
+                                                                                alt="User Image"></a>
+                                                                        <a href="student-details.html">Aakash</a>
+                                                                    </h2>
+                                                                </td>
+                                                                <td>Kumar</td>
+                                                                <td>01732</td>
+                                                                <td>   <a href="tel:7548542125">7548542125</a></td>
+                                                                
+                                                                <td class="text-end">
+                                                                    <div class="actions ">
+                                                                        <a href="javascript:;"
+                                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                                            <i class="feather-trash"></i>
+                                                                        </a>
+                                                                        <a href="edit-student.html"
+                                                                            class="btn btn-sm bg-danger-light">
+                                                                            <i class="feather-edit"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr role="row" class="even">
+                                                                <td class="sorting_1">
+                                                                    <div class="form-check check-tables">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="something">
+                                                                    </div>
+                                                                </td>
+                                                                <td>PRE2209</td>
+                                                                <td>
+                                                                    <h2 class="table-avatar">
+                                                                        <a href="student-details.html"
+                                                                            class="avatar avatar-sm me-2"><img
+                                                                                class="avatar-img rounded-circle"
+                                                                                src="assets/img/profiles/avatar-01.jpg"
+                                                                                alt="User Image"></a>
+                                                                        <a href="student-details.html">Aakash</a>
+                                                                    </h2>
+                                                                </td>
+                                                                <td>Kumar</td>
+                                                                <td>01732</td>
+                                                                <td>   <a href="tel:7548542125">7548542125</a></td>
+                                                                
+                                                                <td class="text-end">
+                                                                    <div class="actions ">
+                                                                        <a href="javascript:;"
+                                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                                            <i class="feather-trash"></i>
+                                                                        </a>
+                                                                        <a href="edit-student.html"
+                                                                            class="btn btn-sm bg-danger-light">
+                                                                            <i class="feather-edit"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr role="row" class="odd">
+                                                                <td class="sorting_1">
+                                                                    <div class="form-check check-tables">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="something">
+                                                                    </div>
+                                                                </td>
+                                                                <td>PRE2209</td>
+                                                                <td>
+                                                                    <h2 class="table-avatar">
+                                                                        <a href="student-details.html"
+                                                                            class="avatar avatar-sm me-2"><img
+                                                                                class="avatar-img rounded-circle"
+                                                                                src="assets/img/profiles/avatar-01.jpg"
+                                                                                alt="User Image"></a>
+                                                                        <a href="student-details.html">Aakash</a>
+                                                                    </h2>
+                                                                </td>
+                                                                <td>Kumar</td>
+                                                                <td>01732</td>
+                                                                <td>   <a href="tel:7548542125">7548542125</a></td>
+                                                                
+                                                                <td class="text-end">
+                                                                    <div class="actions ">
+                                                                        <a href="javascript:;"
+                                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                                            <i class="feather-trash"></i>
+                                                                        </a>
+                                                                        <a href="edit-student.html"
+                                                                            class="btn btn-sm bg-danger-light">
+                                                                            <i class="feather-edit"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                         
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- students list end  -->
+           
+            </div>
+            <my-footer></my-footer>
+        </div>
+        <!-- content end  -->
+    </div>
+
+    <script src="loader.js"></script>
+
+</body>
+
+</html>
