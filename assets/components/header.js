@@ -5,13 +5,15 @@ class MyHeader extends HTMLElement {
       <div class="header">
 
             <div class="header-left">
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logo.png" alt="Logo">
+                <a href="index.html" class="logo  fw-bold fs-2 " style="color:"#3D5EE1"">
+                    <img src="assets/img/Charm-logo.png" class="d-lg-none" alt="Charmbook">
+                    CharmBook
                 </a>
                 <a href="index.html" class="logo logo-small">
-                    <img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
+                    <img src="assets/img/Charm-logo.png" alt="Logo" width="30" height="30">
                 </a>
             </div>
+            
             <div class="menu-toggle">
                 <a href="javascript:void(0);" id="toggle_btn">
                     <i class="fas fa-bars"></i>
